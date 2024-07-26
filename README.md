@@ -47,3 +47,17 @@ class MyCommand < Thor
 
 end
 ```
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/benoittgt/thor-validations.
+
+## Test
+
+```bash
+ruby -Ilib:test test/**/*_test.rb
+```
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
