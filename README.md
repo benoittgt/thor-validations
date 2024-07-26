@@ -18,12 +18,14 @@ Thanks to https://github.com/kddnewton/thor-hollaback for the original idea.
 ## Usage
 
 ```ruby
+require 'thor/validations'
+
 class MyCommand < Thor
   include Thor::Validations
 
-    validate_before, :deploy, :rollback do
-      check_permissions
-    end
+  validate_before, :deploy, :rollback do
+    check_permissions
+  end
 
   desc "deploy", "Deploy app"
   def deploy
@@ -38,8 +40,10 @@ class MyCommand < Thor
   end
 
   private
+
     def check_permissions
       puts "Checking permissions..."
     end
+
 end
 ```

@@ -3,7 +3,7 @@
 require 'thor'
 require_relative 'validations/version'
 
-module Thor
+class Thor
   module Validations
     def self.included(base)
       base.extend(ClassMethods)
@@ -42,4 +42,3 @@ module Thor
     end
   end
 end
-
